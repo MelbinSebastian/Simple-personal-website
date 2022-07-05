@@ -1,0 +1,476 @@
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+    font-family:"Poppins",Arial, sans-serif;
+    margin: 0;   /*make all fit in*/
+    background-repeat: no-repeat;
+    background-color: #212837;
+    
+    
+}
+
+
+/* entire nav bar */
+
+
+.navbar-expand-lg:hover{            
+
+    padding-left:10px;
+    color:white;   
+
+}
+
+
+/* logo */
+.logo{
+
+    width: 40px;
+    max-height:30px;
+    border-radius:10px;
+    color:white;
+    position: relative;
+    
+}
+
+#lo{
+    width: 45px;
+    max-height: 60px;
+    border-radius:30px;
+    color:white;
+    border:3px solid white;
+    image-resolution: 100px ;
+    position: static;
+    
+}
+
+  .nav-link:hover {
+
+    background:white;
+    border-radius: 10px;
+    padding:10px 10px;
+    color:#212837;
+    
+}
+
+.navbar-nav ,.nav-item ,.nav-link{
+    color:white;
+    padding-top:10px;  
+}
+
+.nav-link{
+    width:90px;
+    text-align: center;
+}
+
+.navbar-toggler
+{
+    color:white;
+    background:#212837;
+    border:1px solid white;
+}
+
+.navbar-toggler-icon
+{
+    background:white;
+    color:yellow;
+}
+
+.collapse {
+    color:white;
+}
+
+.login{
+    background:white;
+    padding: 10px 20px;
+    border-radius: 20px;  
+    color: black;
+}
+
+.world h1{
+    text-align:center;
+    color: white;
+    margin-top: 50px;
+    
+    /* box-shadow:6px 6px 10px -1px rgba(0,0,0,100) */
+               
+}
+
+
+/* 
+intro changer */
+#sp:before{
+    color: red;
+    content:'';
+    animation:animate infinite 7s;
+}
+@keyframes animate {
+    20%{
+        content: 'My Website !';
+    }
+    
+
+    40%{
+        content: 'My World !';
+    }
+
+    80%{
+        content: 'My Creation !';
+    }
+
+    100%{
+        content: 'My Development !';
+    }
+
+}
+
+
+.container .row {
+    color:white;
+    text-align: center;
+}
+
+.frontimage{
+    max-height:auto;
+    width:100%;
+    height:80%;
+    border-radius: 30px;
+    border: 5px solid white;
+}
+
+
+.about {
+    color: white;
+    padding-left: 50px;
+    padding-top:100px ;
+    
+}
+
+
+
+#myimg{
+    background:green;
+    border:6px solid white;
+    float:right;  
+    margin-top: 20px;
+    margin-right:150px;  
+    border-radius:50%;
+    width:300px;
+    height:20%;
+    
+    
+}
+
+.bio{
+
+    font-family:Garamond,'Times New Roman', Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-size: 18px;
+    
+}
+
+.data{
+    display:flex;   
+    
+    /* separate divs to each other
+     */
+}
+
+.data th{
+  
+    font-weight:bold;
+    font-size:25px;
+}
+
+.data td{
+   color:lightskyblue;
+}
+
+.tab1{
+    
+    margin-right:200px;
+}
+
+
+
+
+
+.skill{
+
+    display: flex;
+    padding-top:10px;
+}
+
+.col{
+    /* background-color:;
+    color; */
+    margin-left: 50px;
+    margin-bottom: 300px;
+    max-height:3;
+
+}
+
+.row {
+    width:100%;
+}
+
+
+.lang{
+    height: 300px;
+    width:100%;
+    color:greenyellow;
+    font-size: 30px;
+    font-weight:bold;
+    
+}
+
+/* PERCENTAGE CIRCLE */
+
+.outer{
+    height:160px;
+    width:170px;
+    border-radius:50%;
+    /* border:; */
+    margin-left: 10px;
+    padding: 20px 23px;
+    
+    box-shadow:6px 6px 10px -1px rgba(0, 0, 0, 0.15)
+                -6px  -6px 10px -1px rgba(255,255,255,0.7)
+    
+}
+
+.inner{
+    height:120px;
+    width:120px;
+    border-radius:50%;
+    /* border: ; */
+    /* background-color:; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    box-shadow:6px 6px 10px -1px rgba(0, 0, 0, 0.15)
+                -6px  -6px 10px -1px rgba(255,255,255,0.7)
+               -0.5px -0.5px 0px rgba(255,255,255,1),
+               0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px rgba(0,0,0,0.0)
+
+    
+
+}
+
+
+/* //PERCENT COLOR CODING */
+circle{
+    fill:none;
+    stroke:greenyellow;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+
+    animation:anim 2s linear forwards;
+    
+}
+
+
+/* above animation working of circle */
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 165;
+    }
+
+}
+
+
+#circle1{
+    fill:none;
+    stroke:greenyellow;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+
+    animation:ani 2s linear forwards;
+    
+}
+
+
+/* above animation working of circle */
+@keyframes ani{
+    100%{
+        stroke-dashoffset: 330;
+    }
+
+}
+
+#circle2{
+    fill:none;
+    stroke:greenyellow;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+
+    animation:an 2s linear forwards;
+    
+}
+
+
+/* above animation working of circle */
+@keyframes an{
+    100%{
+        stroke-dashoffset: 236;
+    }
+
+}
+
+
+#circle3{
+    fill:none;
+    stroke:greenyellow;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+
+    animation:and 2s linear forwards;
+    
+}
+
+
+/* above animation working of circle */
+@keyframes and{
+    100%{
+        stroke-dashoffset: 354;
+    }
+
+}
+
+svg{
+    position:absolute;
+    top:0;
+    left:0;
+    /* background:; */
+    margin-top:90px;
+    margin-left: 28px;
+
+    
+}
+
+
+
+#percent{
+    font-size:20px;
+    color:greenyellow;
+    font-weight: 600;
+}
+
+#percent1{
+    font-size:20px;
+    color:greenyellow;
+    font-weight: 600;
+}
+
+#percent2{
+    font-size:20px;
+    color:greenyellow;
+    font-weight: 600;
+}
+
+#percent3{
+    font-size:20px;
+    color:greenyellow;
+    font-weight: 600;
+}
+
+
+
+
+.contact{
+    background-color:white;
+    padding-left: 50px;
+    display: flex;
+
+    box-shadow:inset 6px 6px 10px -1px rgba(10,10,0,1) 
+}
+
+
+
+.left{
+    /* background-color:; */
+    padding:100px 100px;
+    
+}
+
+
+.right{
+    /* background-color:; */
+    padding: 100px 100px;
+    font-size:18px;
+}
+
+
+
+.right form input[type="text"]
+{
+    font-family:Arial, Helvetica, sans-serif;
+    width: 80%;
+    height: 40%;
+    border-radius: 5px;
+    border: 1px solid #BDBDBD;
+    
+}
+
+
+#button1{
+     
+    padding:10px 30px;
+    border-radius: 20px;
+    background:#212837;
+    color:white;
+    font-size:15px;
+    border-color: white;
+    margin-top:40px;
+    
+}
+
+
+ form input[type="text"]
+{
+    padding:10px;
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 1px solid red;
+    /* background-color:; */
+    
+}
+
+    
+.scroll-top {
+    position: fixed;
+    right: 50px;
+    bottom: 40px;
+    background: #212837;
+    width: 40px;
+    height: 40px;
+    transition: all 0.4s;
+    border-radius:10px;
+    color:white;
+  }
+  
+  .scroll-top i {
+    position: fixed;
+    width: 40px;
+    height:40px;
+    text-align:center;
+    line-height: 40px;
+    color:red;
+  }
+  
+  .scroll-top i:hover {
+    background:white ;
+    color:#212837;
+    border-radius: 10px;
+  }
+  
+  
